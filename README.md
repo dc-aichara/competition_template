@@ -2,7 +2,7 @@
 
 A competition template repository which makes it easy to kick start a new repo for competition. 
 
-
+```bash
 ├── competition_code
 │   ├── train_model.py
 │   ├── model_serving.py
@@ -27,5 +27,5 @@ A competition template repository which makes it easy to kick start a new repo f
 ├── LICENSE
 ├── README.md
 
-
+```
 
