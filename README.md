@@ -1,6 +1,6 @@
 # Competition Template
 
-A competition template repository which makes it easy to kick start a new repo for competition. 
+A competition template repository which makes it easy to kick start a new repository for competition. 
 
 ```bash
 ├── competition_code
@@ -68,14 +68,14 @@ To update environment.
  4. To utilize training pipeline run the following command. 
     
     ```bash
-    docker exec -it jr_pipeline /bin/bash 
+    docker exec -it competition_pipeline /bin/bash 
     ```
- 5. To begin end to end training ensure all data is in data/raw and run the following. - maybe need to allow for loading data from old files in future.
+ 5. To begin an end to end training ensure all data is in data/raw and run the following. - maybe need to allow for loading data from old files in future.
     
     ```bash
     sh start_pipeline.sh 
     ```
 ### Data Setup 
- 1. Add CSV files to data/raw 
+ 1. Add CSV files to data/raw.
 
 

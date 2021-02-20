@@ -35,9 +35,9 @@ RUN mkdir -p /etc/OpenCL/vendors && \
 SHELL ["/bin/bash", "-c"]
 
 # Conda Setup 
-RUN conda env update -n competition_name --file environment.yml
-RUN echo "source activate competition_name" > ~/.bashrc
-ENV PATH /opt/conda/envs/competition_name/bin:$PATH
+RUN conda env update -n competition --file environment.yml
+RUN echo "source activate competition" > ~/.bashrc
+ENV PATH /opt/conda/envs/competition/bin:$PATH
 
 ## Uninstall Conda LightGBM
 RUN pip uninstall -y lightgbm 
