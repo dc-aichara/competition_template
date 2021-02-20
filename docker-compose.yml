@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+    competition_name_notebooks:
+        container_name: "competition_name_notebooks"
+        image: "competition_name_notebooks:latest"
+        tty: true
+        build: 
+            context: .
+        ports: 
+            - "8888:8888"
+        volumes: 
+            - .:/app
+        command: jupyter-lab --no-browser --port=8888 --ip=0.0.0.0 --allow-root
+    jr_pipeline:
+        container_name: "jr_pipeline"
+        image: "jr_pipeline:latest"
+        tty: true
+        build: 
+            context: .
+        runtime: nvidia
+        environment:
+        - NVIDIA_VISIBLE_DEVICES=all
+        volumes: 
+            - .:/app
+        command: nvidia-smi -l 1

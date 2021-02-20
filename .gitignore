@@ -1,3 +1,14 @@
+.ipynb_checkpoints/
+data/raw/*.csv
+data/processed/*.csv
+data/interim/*.csv
+data/submissions/*.csv
+models/*.txt
+models/*.csv
+.DS_Store
+__pycache__/
+*.png
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
