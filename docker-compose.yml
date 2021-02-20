@@ -1,3 +1,4 @@
+## Optional Docker-Compose which starts up a notebook environment and pipeline environment
 version: "3.7"
 services:
     competition_name_notebooks:
@@ -11,9 +12,9 @@ services:
         volumes: 
             - .:/app
         command: jupyter-lab --no-browser --port=8888 --ip=0.0.0.0 --allow-root
-    jr_pipeline:
-        container_name: "jr_pipeline"
-        image: "jr_pipeline:latest"
+    competition_name_pipeline:
+        container_name: "competition_pipeline"
+        image: "competition_pipeline:latest"
         tty: true
         build: 
             context: .
