@@ -1,4 +1,4 @@
-## File for starting dvc pipeline 
+## File for starting dvc pipeline - must use dvc init in project first
 
 ## Must specify inputs and outputs to each step for DAG to work correctly- 
 ## The below DVC template will cover must cases but, Each additional stage in the pipeline must be added to the below template format. 
