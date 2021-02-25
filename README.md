@@ -43,7 +43,7 @@ A competition template repository which makes it easy to kick start a new reposi
 
 To update environment. 
  ```bash
- conda env create --file environment.yml
+ conda env update --file environment.yml --prune
  ```
 
 ## DVC 
