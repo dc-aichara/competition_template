@@ -10,17 +10,17 @@ echo $config_id
 dvc run -n make_dataset \
         -d ##Add Input Files \
         -o ##Add Output Files \
-        "python ./make_dataset.py --config_id ${config_id}"
+        "python ./competition_code/make_dataset.py --config_id ${config_id}"
 
 dvc run -n create_features \
         -d ##Add Input Files \
         -o ##Add Output Files \
-        "python ./create_features.py --config_id ${config_id}"
+        "python ./competition_code/create_features.py --config_id ${config_id}"
 
 dvc run -n train_model \
         -d ##Add Input Files \
         -o ##Add Output Files \
-        "python ./train_model.py --config_id ${config_id}"
+        "python ./competition_code/train_model.py --config_id ${config_id}"
 
 dvc run -n model_serving \
         -d ##Add Input Files \
