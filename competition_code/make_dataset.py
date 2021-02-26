@@ -1,4 +1,5 @@
 import argparse
+from utils import load_config
 
 
 if __name__ == '__main__':
@@ -14,3 +15,4 @@ if __name__ == '__main__':
     config_id = ARGS.config_id
 
     print('Make Dataset !!!!')
+    config = load_config(config_id)
