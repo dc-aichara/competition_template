@@ -1,6 +1,6 @@
 # Competition Template
 
-A competition template repository which makes it easy to kick start a new repository for competition. 
+A competition template repository which makes it easy to kick start a new repository for a competition. 
 
 ```bash
 ├── competition_code
